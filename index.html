@@ -14,15 +14,15 @@
       <nav class="menu">
         <ul>
           <li><a href="/">Inicio</a></li>
-          <li><a href="/productos">Sobre mi</a></li>
-          <li><a href="/servicios">Proyectos</a></li>
-          <li><a href="/contacto">Contacto</a></li>
+          <li><a href="#sobreMi">Sobre mi</a></li>
+          <li><a href="#habilidades">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>Sobre mi</h1>
+      <h1 id="sobreMi">Sobre mi</h1>
 
       <figure class="foto">
         <img alt="Foto Guz Cafe" src="assets/miFoto.jpg" />
@@ -30,56 +30,66 @@
 
       <p>Descripcion...</p>
 
-      <section class="habilidades">
+      <section id="habilidades" class="habilidades">
         <h2>Tabla de habilidades</h2>
 
-      <table class="skills">
-        <thead>
-          <tr>
-            <th>Habilidad</th>
-            <th>Nivel</th>
-            <th>Uso</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>JavaScript</td>
-            <td>Intermedio</td>
-            <td>Backend</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>CSS</td>
-            <td>Intermedio</td>
-            <td>FrontEnd</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>Python</td>
-            <td>Bajo</td>
-            <td>Backend</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>Java</td>
-            <td>Bajo</td>
-            <td>Backend</td>
-          </tr>
-        </tbody>
-      </table>
-
+        <table class="skills">
+          <thead>
+            <tr>
+              <th>Habilidad</th>
+              <th>Nivel</th>
+              <th>Uso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JavaScript</td>
+              <td>Intermedio</td>
+              <td>Backend</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>CSS</td>
+              <td>Intermedio</td>
+              <td>FrontEnd</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Python</td>
+              <td>Bajo</td>
+              <td>Backend</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Java</td>
+              <td>Bajo</td>
+              <td>Backend</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
-      <section class=" contacto">
+      <section id="contacto" class="contacto">
         <h2>Formlulario de contacto</h2>
+        <form
+          action="/procesar-datos"
+          method="post"
+          enctype="multipart/form-data"
+          autocomplete="on"
+        >
+          <!-- Aquí se añadirían los elementos de control del formulario, como inputs, textareas, etc. -->
+          <input required placeholder="Nombre" type="text" id="username" name="username" /><br />
+          <input required placeholder="Tu correo" type="email" id="mail" name="mail" /><br />
+          <button id="botonEnviar" type="submit">Enviar</button>
+        </form>
       </section>
     </main>
 
     <footer>
-      <p>© 2025 Jonathan Guzman – Todos los derechos</p>
+      <p>© 2026 Jonathan Guzman – Todos los derechos reservados</p>
     </footer>
   </body>
 </html>

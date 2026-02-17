@@ -155,3 +155,25 @@ footer{
   border-top: 1px solid var(--line);
   background: rgba(0,0,0,0.15);
 }
+
+#username,
+#mail{
+  width: 50%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+}
+
+#botonEnviar{
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+}
